@@ -11,7 +11,7 @@ jobs:
             command: npm install
         - run:
             name: Run eslint
-            command: npx eslint src/**
+            command: npx eslint src/**/*.*
 
 workflows:
   version: 2.1
