@@ -1,8 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
+import MuscleGuy from './components/MuscleGuy';
 
 const App: React.FC = () => {
-  return <Header />;
+  return (
+    <div>
+      <Header />
+      <MuscleGuy />
+    </div>
+  );
 };
 
 export default App;
