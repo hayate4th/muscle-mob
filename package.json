@@ -16,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/hayate4th/muscle-mob/issues"
   },
-  "homepage": "https://github.com/hayate4th/muscle-mob#readme"
+  "homepage": "https://github.com/hayate4th/muscle-mob#readme",
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.9",
+    "@types/react-dom": "^16.9.2",
+    "@types/styled-components": "^4.1.19",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.4"
+  }
 }
