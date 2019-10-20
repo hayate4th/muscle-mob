@@ -1,0 +1,20 @@
+{
+  "name": "muscle-mob",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayate4th/muscle-mob.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayate4th/muscle-mob/issues"
+  },
+  "homepage": "https://github.com/hayate4th/muscle-mob#readme"
+}
