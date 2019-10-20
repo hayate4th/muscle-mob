@@ -1,0 +1,20 @@
+version: 2.1
+
+jobs:
+  ts-lint:
+      docker:
+        - image: circleci/node: 12.4.0
+      steps:
+        - checkout
+        - run:
+            name: Install dependencies
+            command: npm install
+        - run:
+            name: Run eslint
+            command: npx eslint src/**
+
+workflows:
+  version: 2.1
+  ts-lint:
+    jobs:
+      - ts-lint
