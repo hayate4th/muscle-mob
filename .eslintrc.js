@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     'airbnb',
+    'plugin:prettier/recommended'
   ],
   globals: {
     Atomics: 'readonly',
@@ -24,5 +25,21 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "prettier/prettier": [
+      "error",
+      {
+        singleQuote: true,
+        trailingComma: "es5"
+      }
+    ]
   },
+  settings: {
+    "import/resolver": {
+      node: {
+        paths: ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
 };
