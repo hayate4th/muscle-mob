@@ -7,7 +7,7 @@ const App: React.FC = () => {
     <div>
       <Header />
       <MuscleGuy />
-      <MuscleGuy />
+      <MuscleGuy isInverted />
     </div>
   );
 };

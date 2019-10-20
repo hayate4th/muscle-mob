@@ -1,8 +1,18 @@
 import React from 'react';
 import muscleImage from './muscle.png';
 
-const MuscleGuy: React.FC = () => {
-  return <img src={muscleImage} alt="Body Builder" />;
+interface MuscleGuyProps {
+  isInverted?: boolean;
+}
+
+const MuscleGuy: React.FC<MuscleGuyProps> = ({ isInverted }) => {
+  return (
+    <img
+      src={muscleImage}
+      alt="Body Builder"
+      style={isInverted ? { transform: 'scale(-1, 1)' } : {}}
+    />
+  );
 };
 
 export default MuscleGuy;
