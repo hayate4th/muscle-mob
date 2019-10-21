@@ -11,6 +11,7 @@ const MuscleGuy: React.FC<MuscleGuyProps> = ({ isInverted }) => {
       src={muscleImage}
       alt="Body Builder"
       style={isInverted ? { transform: 'scale(-1, 1)' } : {}}
+      width={400}
     />
   );
 };

@@ -6,8 +6,8 @@ const App: React.FC = () => {
   return (
     <div>
       <Header />
-      <MuscleGuy />
       <MuscleGuy isInverted />
+      <MuscleGuy />
     </div>
   );
 };
