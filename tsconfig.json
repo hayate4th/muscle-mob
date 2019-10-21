@@ -8,8 +8,12 @@
     "rootDirs": [
       "src"
     ],
+    "baseUrl": "./",
+    "paths": {"import-png": ["types/import-png"]},
+    "typeRoots": ["types", "node_modules/@types"],
     "types": [
-      "react"
+      "react",
+      "import-png"
     ],
     "esModuleInterop": true
   },
