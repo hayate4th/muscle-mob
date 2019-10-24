@@ -2,14 +2,42 @@ import React from 'react';
 import styled from 'styled-components';
 import TimerOption from '../TimerOption';
 
-const OptionSelector: React.FC = () => {
+interface OptionSelectorProps {
+  setSeconds: React.Dispatch<React.SetStateAction<number>>;
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const OptionSelector: React.FC<OptionSelectorProps> = ({
+  setSeconds,
+  setIsActive,
+}) => {
   return (
     <OptionList>
-      <TimerOption optionValue={1} />
-      <TimerOption optionValue={10} />
-      <TimerOption optionValue={15} />
-      <TimerOption optionValue={30} />
-      <TimerOption optionValue={60} />
+      <TimerOption
+        optionValue={1}
+        setSeconds={setSeconds}
+        setIsActive={setIsActive}
+      />
+      <TimerOption
+        optionValue={10}
+        setSeconds={setSeconds}
+        setIsActive={setIsActive}
+      />
+      <TimerOption
+        optionValue={15}
+        setSeconds={setSeconds}
+        setIsActive={setIsActive}
+      />
+      <TimerOption
+        optionValue={30}
+        setSeconds={setSeconds}
+        setIsActive={setIsActive}
+      />
+      <TimerOption
+        optionValue={60}
+        setSeconds={setSeconds}
+        setIsActive={setIsActive}
+      />
     </OptionList>
   );
 };
