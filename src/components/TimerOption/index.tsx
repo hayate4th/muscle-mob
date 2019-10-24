@@ -4,11 +4,22 @@ import meatImage from './meat.png';
 
 interface TimerOptionProps {
   optionValue: number;
+  setSeconds: React.Dispatch<React.SetStateAction<number>>;
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const TimerOption: React.FC<TimerOptionProps> = ({ optionValue }) => {
+const TimerOption: React.FC<TimerOptionProps> = ({
+  optionValue,
+  setSeconds,
+  setIsActive,
+}) => {
+  const handleOnClick = () => {
+    setSeconds(optionValue * 60);
+    setIsActive(true);
+  };
+
   return (
-    <OptionButton>
+    <OptionButton onClick={handleOnClick}>
       <OptionText>{optionValue}</OptionText>
     </OptionButton>
   );
