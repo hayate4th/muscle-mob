@@ -1,15 +1,22 @@
 import React from 'react';
-import Header from './components/Header';
+import styled from 'styled-components';
 import MuscleGuy from './components/MuscleGuy';
+import OptionSelector from './components/OptionSelector';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Header />
+    <FlexWrapper>
       <MuscleGuy isInverted />
+      <OptionSelector />
       <MuscleGuy />
-    </div>
+    </FlexWrapper>
   );
 };
+
+const FlexWrapper = styled.div`
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
+`;
 
 export default App;
