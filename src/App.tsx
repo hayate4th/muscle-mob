@@ -22,6 +22,7 @@ const App: React.FC = () => {
     return () => clearInterval(interval);
   }, [isActive, seconds]);
 
+  // TODO: このやり方あってる？
   useEffect(() => {
     if (seconds <= 0) {
       setIsActive(false);
