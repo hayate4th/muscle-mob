@@ -34,7 +34,7 @@ const OptionSelector: React.FC<OptionSelectorProps> = ({
         setIsActive={setIsActive}
       />
       <TimerOption
-        optionValue={60}
+        optionValue={50}
         setSeconds={setSeconds}
         setIsActive={setIsActive}
       />
@@ -44,6 +44,7 @@ const OptionSelector: React.FC<OptionSelectorProps> = ({
 
 const OptionList = styled.div`
   width: 200px;
+  z-index: 1000;
 
   & > button {
     margin-bottom: 10px;
